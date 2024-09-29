@@ -1,0 +1,184 @@
+29-September-24
+
+Lec 08
+
+Classes and objects
+
+
+void main() {}
+
+
+class Captitalclass name {}
+
+classes is a superset of functions
+functions =>   methods or behaviour
+
+
+---------------------------------------------------
+
+void main() {
+Student student1 = Student()
+
+
+
+}
+
+
+class Student{
+// Attributes | Properties
+var name = "";
+var rollNo = "";
+var age = "";
+
+//Default Contructor
+Student() {
+ name = studentName;
+ rollNo = studentRollNo;
+}
+
+// Methods | Behaviours
+
+setStudentInfo() {
+name = studentName;
+rollNo = studentRollNo;
+}
+
+printStudentInfo() {
+ print('Name: $name');
+ print('Roll No: $rollNo');
+ print('Age: $age');
+}
+
+ printName() {
+
+}
+
+}
+
+
+
+
+------------------------------------------------------------------------------------------
+
+class Student{
+//Attributes | Properties
+// var name = "";
+
+var rollNo = "";
+var age = "";
+}
+
+//Default Constructor
+Student(name, rollNo){
+this.name = name;
+this.rollNo = rollNo;
+}
+
+// Methods | Behaviours
+
+
+local & global variable
+
+Constructor sa data pass kesa hota yeh flutter mai ham karta
+
+Flutter depends on classes
+
+Dart console(terminal) based hai
+Flutter UI based hai
+
+({required this.name, required this.rollNo});
+
+------------------------------------------------------------------------------------------------------------------
+Named Const => Multiple hota hain
+ 
+Default Const => ek hi hota hain
+
+
+void main() {
+Student student1 = Student(name: 'Ahmed', rollNo: 'NN-11');
+Student studentSpecial = Student.special();
+}
+
+
+class Student {
+
+var name = '';
+var rollNo = '';
+var age = '';
+
+//Default Const
+Student({required this.name, required this.rollNo});
+
+
+// Named Const
+
+Student.special() {}
+
+
+
+// Methods | Behaviours
+
+setStudentInfo(studendName, studentRollNo) {
+ name = studentName;
+ rollNo = studentRollNo;
+}
+
+------------------------------------------------------------------------------------------------------------------
+Oop importance in every class python, dart, js
+
+4 Pillars
+1. Inheritance   => class banai Car aur diff class ban sakti hai child class jo hogi woh parent class ko extend karegi
+2. Encapsulation => class jo user ko easily accessible na ho ya ap hide kardein
+3. Abstraction => incomplete class jisa compl hona ka lia kisi aur ki zrorat hoti
+4. Polymorphism => ek banda different role play kar raha ho e.g: john here student, home child, play diff roles
+
+
+
+
+Abstract class
+
+incomplete class jisa compl hona ka lia kisi aur ki zrorat hoti
+
+int num1 = 10;   // abstract final class
+
+1) Single inheritance 
+2) Multiple inheritance  => ek class multiple class sa inherit horhi hai
+3) Multi level Inheritance
+4) Hierarchial Inheritance
+
+3-4 classes lag jaeingein srf classes pe
+
+class Animal{}
+
+class Cat extends Animal {}
+class Dog extends Animal {}
+
+Inheritance mai 2 instance 2 object banta hain
+Ek animal ka object banega
+Ek cat ka object banega
+
+------------------------------------------------------------------------------------------------------------------
+
+
+
+class Animal {
+var blood;
+}
+
+
+class Cat extends Animal {
+ printBlood() {
+ print(blood);
+}
+}
+
+class Dog extends Animal {}
+
+
+
+
+
+
+
+
+
